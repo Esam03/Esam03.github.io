@@ -1,96 +1,120 @@
-html {
-    background: linear-gradient(to left, #ffebc6, #facd8a);
-}
-
-body {
-    width: 1000px;
-    background-color: white;
-    margin: 15px auto;
-    padding: 15px 1.5em;
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 5px 5px 0 0;
-}
-
-a:focus, a:hover {
-    border: 3px blue;
-    border-style: dotted solid;
-}
-
-header {
-    display: flex;
-    align-items: center;
-}
-
-header img {
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-h1 {
-    color: red;
-    font-weight: bold;
-}
-
-h2 {
-    color: #8a0000;
-}
-
-article {
-    clear: left;
-    width: 70%;
-    float: left;
-    column-count: 2;
-    column-rule: 2px dotted maroon;
-    column-gap: 2em;
-    margin-left: 2em;
-}
-
-article h3 {
-    column-span: all;
-    font-weight: bold;
-}
-
-article img {
-    float: left;
-    margin-right: 1em;
-    margin-bottom: 1em;
-}
-
-article p::first-letter {
-    font-size: 3em;
-    font-weight: bold;
-    font-style: italic;
-    color: lightgreen;
-}
-
-aside {
-    width: 20%;
-    float: right;
-    background-color: #ffebc6;
-    padding: 1em;
-    border-radius: 10px;
-}
-
-aside h4 {
-    text-decoration: underline;
-}
-
-footer {
-    clear: both;
-    border-top: 2px solid maroon;
-    text-align: center;
-    padding: 1em 0;
-}
-
-p.fixed {
-    width: auto;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background: lightgreen;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Sam's Homepage</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        html {
+            background: linear-gradient(to left, #facd8a, white);
+        }
+        body {
+            width: 1000px;
+            background-color: white;
+            margin: 15px auto;
+            padding: 15px 1.5em;
+            border: 1px solid black;
+            border-radius: 25px;
+            box-shadow: 5px 5px 0 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        h1 {
+            color: red;
+            font-size: 1.8em;
+        }
+        h2 {
+            color: darkred;
+            font-size: 1.2em;
+        }
+        article {
+            clear: left;
+            width: 70%;
+            float: left;
+            column-count: 2;
+            column-rule: 2px dotted maroon;
+            column-gap: 2em;
+            margin-left: 2em;
+        }
+        article h3 {
+            column-span: all;
+            font-weight: bold;
+        }
+        article img {
+            float: left;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+        article p::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            font-style: italic;
+            color: lightgreen;
+        }
+        aside {
+            width: 20%;
+            float: right;
+            background-color: #ffebc6;
+            padding: 1em;
+            border: 1px solid black;
+        }
+        aside a {
+            color: blue;
+        }
+        footer {
+            clear: both;
+            border-top: 2px solid maroon;
+            text-align: center;
+            padding: 1em 0;
+        }
+        p.fixed {
+            width: auto;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: lightgreen;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="OIP.jpg" alt="Emmanuel Sam" width="80">
+        <div>
+            <h1>Emmanuel Sam's Homepage</h1>
+            <h2>Esam03.github.io</h2>
+        </div>
+    </header>
+    
+    <main>
+        <article>
+            <h3>MGIS 3320: Web Site Development Project</h3>
+            <img src="planet.jpg" alt="A planet image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt malesuada nisl, id sodales lorem auctor vel...</p>
+        </article>
+        <aside>
+            <h4>References</h4>
+            <ol>
+                <li><a href="#">W3Schools</a></li>
+                <li><a href="#">Mozilla</a></li>
+                <li><a href="#">Microsoft</a></li>
+            </ol>
+            <p><a href="index.html">Return to Home page</a></p>
+        </aside>
+    </main>
+    <footer>
+        <p class="copyright">© 2024 Emmanuel Sam. All rights reserved.</p>
+    </footer>
+    <p class="fixed">Contact me at eas104@shsu.edu</p>
+</body>
+</html>
 
