@@ -1,96 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Sam's Homepage</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <style>
-        html {
-            background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
-        }
-        body {
-            width: 1000px;
-            background-color: white;
-            margin: 15px auto;
-            padding: 15px 1.5em;
-            border: 1px solid black;
-            border-radius: 25px;
-            box-shadow: 5px 5px 0 0;
-            background-repeat: repeat-y;
-            background-position: right;
-            background-attachment: fixed;
-        }
-        header {
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        h1, h2 {
-            margin: 0;
-        }
-        h3 {
-            margin: 3em 2em 1.5em 2em;
-            border: 5px double blue;
-            border-radius: 20px;
-            box-shadow: 3px 3px 4px 4px red;
-            padding: 1em;
-        }
-        nav {
-            margin: 1.5em 2em 1.5em 2em;
-            border: 5px dashed blue;
-            border-radius: 20px;
-            box-shadow: 3px 3px 4px 4px red;
-            padding: 0.5em;
-        }
-        .contact {
-            margin: 1.5em 2em 0em 2em;
-            border: 5px dotted blue;
-            border-radius: 20px;
-            box-shadow: 3px 3px 4px 4px red;
-            padding: 1em;
-        }
-        img {
-            margin-left: 2em;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="OIP.jpg" alt="Emmanuel Sam" width="80">
-        <div>
-            <h1 class="shadow">Emmanuel Sam's Homepage</h1>
-            <h2 class="shadow">Esam03.github.io</h2>
-        </div>
-    </header>
-    <h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Sed tristique libero eget dui facilisis, eget faucibus metus varius. Nulla facilisi. Proin nec libero quis orci tempor feugiat nec a erat...
-    </h3>
-    <nav>
-        <ul id="list">
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Work Experience</a></li>
-            <li><a href="#">Knowledge and skills</a></li>
-            <li><a href="#">Certifications</a></li>
-            <li><a href="#">Class Projects</a></li>
-            <li><a href="resume.pdf" download="Emmanuel_Sam_Resume.pdf">Download Resume</a></li>
-            <li><a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:prodej2003x@gmail.com">prodej2003x@gmail.com</a></li>
-        </ul>
-    </nav>
-    <div class="contact">
-        <p>Resume: <a href="resume.pdf" download>PDF</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn</a></p>
-        <p>Email: <a href="mailto:prodej2003x@gmail.com">prodej2003x@gmail.com</a></p>
-    </div>
-    <footer>
-        <p class="copyright">© 2024 Emmanuel Sam. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+html {
+    background: linear-gradient(to left, #f8f8f8, #e8e8e8);
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+a:focus, a:hover {
+    border: 3px blue;
+    border-style: dotted solid;
+}
+
+article {
+    clear: left;
+    width: 70%;
+    float: left;
+    column-count: 2;
+    column-rule: 2px dotted maroon;
+    column-gap: 2em;
+    margin-left: 2em;
+}
+
+article h3 {
+    column-span: all;
+}
+
+article img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+article p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: lightgreen;
+}
+
+aside {
+    width: 20%;
+    float: right;
+    background-color: #ffebc6;
+    padding: 1em;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid maroon;
+    text-align: center;
+    padding: 1em 0;
+}
+
+p.fixed {
+    width: auto;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 
