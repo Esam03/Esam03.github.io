@@ -9,7 +9,7 @@
             line-height: 1.6;
             background: url('shsu-logo.png') right repeat-y fixed;
             border: 1px solid #ccc;
-            background-position: center;
+            background-color: #fff;
         }
         nav ul {
             list-style-type: none;
@@ -50,6 +50,8 @@
             padding: 20px;
             border-left: 2px dotted red;
             border-right: 2px dotted red;
+            display: flex;
+            flex-direction: column;
         }
         h1, h2 {
             font-family: 'Georgia', serif;
@@ -100,56 +102,46 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project A</a></li>
+            <li><a href="#">Project B</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Project A</a></li>
-        <li><a href="#">Project B</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
-</nav>
+    <aside>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#method">Method</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+        </ul>
+    </aside>
 
-<aside>
-    <h3>Table of Contents</h3>
-    <ul>
-        <li><a href="#introduction">I. Introduction</a></li>
-        <li><a href="#method">II. Method</a>
-            <ul>
-                <li><a href="#analysis">a. Analysis</a></li>
-                <li><a href="#structure">b. Structure</a></li>
-            </ul>
-        </li>
-        <li><a href="#results">III. Results</a></li>
-        <li><a href="#discussion">IV. Discussion</a></li>
-    </ul>
-</aside>
+    <article>
+        <h1 id="intro">Research Project B</h1>
+        <h2>Introduction</h2>
+        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
+        <hr>
+        <h2 id="method">Method</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
+        <hr>
+        <h2 id="analysis">Analysis</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
+        <hr>
+        <h2 id="results">Results</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
+        <hr>
+        <h2 id="discussion">Discussion</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
+    </article>
 
-<article>
-    <h1>Research Project B</h1>
-
-    <h2 id="introduction">Introduction</h2>
-    <p class="first-letter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
-
-    <h2 id="method">Method</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
-
-    <h2 id="analysis">a. Analysis</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
-
-    <h2 id="structure">b. Structure</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
-
-    <h2 id="results">Results</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
-
-    <h2 id="discussion">Discussion</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
-</article>
-
-<footer>
-    <p>Created by Emmanuel Sam | <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn Profile</a></p>
-</footer>
-
+    <footer>
+        <p>Created by <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">Emmanuel Sam</a></p>
+    </footer>
 </body>
 </html>
