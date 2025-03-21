@@ -48,11 +48,8 @@
             margin-left: 5%;
             background-color: #fff;
             padding: 20px;
-            border-left: 2px dotted red;
-            border-right: 2px dotted red;
-        }
-        h1, h2 {
-            font-family: 'Georgia', serif;
+            border-left: 2px dotted purple;
+            border-right: 2px dotted purple;
         }
         h1 {
             font-size: 2em;
@@ -62,6 +59,7 @@
         h2 {
             border-bottom: 1px solid #ccc;
             margin-top: 20px;
+            color: #4b0082;
         }
         p {
             text-indent: 30px;
@@ -79,6 +77,12 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+        hr {
+            border: 0;
+            height: 1px;
+            background: purple;
+            margin: 20px 0;
+        }
         footer {
             text-align: center;
             padding: 10px;
@@ -90,63 +94,71 @@
             color: #4da8da;
             text-decoration: none;
         }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ccc;
-            margin: 20px 0;
-        }
     </style>
-    <title>Project B</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Project A</a></li>
-            <li><a href="exam.html">Project B</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
 
-    <article>
-        <h1>Research Project B</h1>
-        <h2>Introduction</h2>
-        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus...</p>
-        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/pia22908-16.jpg" alt="NASA Image">
-        <p> Ipsum quam voluptas assumenda...</p>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Project A</a></li>
+        <li><a href="#">Project B</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</nav>
 
-        <h2>Method</h2>
-        <p><span class="first-letter">A</span>liquid reprehenderit explicabo quia. Facere, autem asperiores expedita veritatis, quas optio cum, qui dolor placeat iste officiis...</p>
-        
-        <h2>Analysis</h2>
-        <p><span class="first-letter">P</span>rovident, illo voluptatem, quaerat at impedit facere asperiores nesciunt voluptates minima ex praesentium libero...</p>
-        
-        <h2>Results</h2>
-        <p><span class="first-letter">E</span>t esse voluptates exercitationem facilis optio cum, quasi dolor nihil! Blanditiis, quod mollitia accusamus hic sit nihil omnis...</p>
-        
-        <h2>Discussion</h2>
-        <p><span class="first-letter">D</span>olore quae ear a eius obcaecati eligendi esse commodi voluptatibus tenetur animi vel est voluptatem corporis molestiae...</p>
-    </article>
+<aside>
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#method">Method</a></li>
+        <li>
+            <a href="#analysis">Analysis</a>
+            <ul>
+                <li><a href="#measurement">Measurement</a></li>
+                <li><a href="#structure">Structure</a></li>
+            </ul>
+        </li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#discussion">Discussion</a></li>
+    </ol>
+</aside>
 
-    <aside>
-        <ul>
-            <li><a href="#introduction">I. Introduction</a></li>
-            <li><a href="#method">II. Method</a>
-                <ul>
-                    <li><a href="#analysis">a. Analysis</a></li>
-                    <li><a href="#measurement">b. Measurement</a></li>
-                    <li><a href="#structure">c. Structure</a></li>
-                </ul>
-            </li>
-            <li><a href="#results">III. Results</a></li>
-            <li><a href="#discussion">IV. Discussion</a></li>
-        </ul>
-        <a href="#top">Return to the top of the page</a>
-    </aside>
+<article>
+    <h1>Research Project B</h1>
+
+    <h2 id="introduction">Introduction</h2>
+    <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus, iure accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos doloribus corrupti consequatur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.</p>
+    <hr>
+
+    <h2 id="method">Method</h2>
+    <p>Facere, autem asperiores expedita veritatis, quas optio, cum dolor placeat iste officiis.</p>
+    <hr>
+
+    <h2 id="analysis">Analysis</h2>
+    <p>Dolore quaerat ea eius obcaecati eligendi esse commodi voluptatibus tenetur animi vel.</p>
+    <hr>
+
+    <h2 id="measurement">Measurement</h2>
+    <p>Voluptatum, corporis molestias fugit architecto rerum cum minus labore.</p>
+    <hr>
+
+    <h2 id="structure">Structure</h2>
+    <p>Minima sit omnis sunt mollitia possimus doloribus.</p>
+    <hr>
+
+    <h2 id="results">Results</h2>
+    <p>Deserunt ex laudantium assumenda eligendi fuga.</p>
+    <hr>
+
+    <h2 id="discussion">Discussion</h2>
+    <p>Explicabo corporis ad placeat, autem ipsa.</p>
+    <hr>
 
     <footer>
-        &copy; 2025 Your Name | <a href="https://www.linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+        <p>&copy; 2025 SHSU Project B | <a href="#">Return to the top of the page</a></p>
     </footer>
+</article>
+
 </body>
 </html>
