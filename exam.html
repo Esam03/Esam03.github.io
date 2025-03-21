@@ -44,14 +44,18 @@
             border-radius: 5px;
         }
         article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             width: 75%;
             margin-left: 5%;
-            background-color: #fff;
+        }
+        .section {
+            width: 32%;
             padding: 20px;
-            border-left: 2px dotted red;
-            border-right: 2px dotted red;
-            display: flex;
-            flex-direction: column;
+            background-color: #fff;
+            border-left: 2px solid purple;
+            border-right: 2px solid purple;
         }
         h1, h2 {
             font-family: 'Georgia', serif;
@@ -74,13 +78,6 @@
             font-size: 1.5em;
             font-style: italic;
             font-weight: bold;
-        }
-        img {
-            float: left;
-            margin: 0 20px 10px 0;
-            width: 120px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
         footer {
             text-align: center;
@@ -111,33 +108,22 @@
         </ul>
     </nav>
 
-    <aside>
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#method">Method</a></li>
-            <li><a href="#analysis">Analysis</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#discussion">Discussion</a></li>
-        </ul>
-    </aside>
-
     <article>
-        <h1 id="intro">Research Project B</h1>
-        <h2>Introduction</h2>
-        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
-        <hr>
-        <h2 id="method">Method</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
-        <hr>
-        <h2 id="analysis">Analysis</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
-        <hr>
-        <h2 id="results">Results</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
-        <hr>
-        <h2 id="discussion">Discussion</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolores corrupti consequatur minima.</p>
+        <div class="section">
+            <h1 id="intro">Research Project B</h1>
+            <h2>Introduction</h2>
+            <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis vel metus laoreet venenatis. Nam at lacus lorem. Praesent ac lacus vel urna bibendum cursus. Cras nec venenatis ipsum. Morbi eget ante enim. Nullam a ligula sed velit facilisis pharetra. Integer at venenatis ex. Phasellus sit amet magna at orci gravida dignissim.</p>
+        </div>
+
+        <div class="section">
+            <h2 id="method">Method</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan lacus ac sapien consectetur, at varius lectus tempus. Donec gravida facilisis tellus et bibendum. Nulla facilisi. Vivamus sed metus ligula. Ut vulputate augue id elit volutpat gravida. Integer congue purus non lorem sollicitudin, nec ullamcorper ex fringilla.</p>
+        </div>
+
+        <div class="section">
+            <h2 id="analysis">Analysis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et libero nec lorem ultricies fermentum. Curabitur non ex nulla. Nunc aliquam cursus ante. Mauris vitae nisi in purus facilisis luctus. Curabitur tincidunt metus nec lectus laoreet, ut bibendum sapien imperdiet. Integer facilisis lacus eget ligula interdum tristique. Pellentesque sit amet tincidunt erat.</p>
+        </div>
     </article>
 
     <footer>
