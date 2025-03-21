@@ -17,26 +17,34 @@
             color: white;
             text-align: center;
             padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
         }
         .menu {
             display: flex;
             justify-content: center;
             background-color: lightgray;
             padding: 10px;
+            font-size: 14px;
         }
         .menu a {
             margin: 0 15px;
             text-decoration: none;
             color: black;
             font-weight: bold;
+            background: white;
+            padding: 5px 10px;
+            border: 1px solid black;
         }
         .content {
             display: flex;
+            flex-direction: row;
             margin: 20px;
         }
         .left-column {
             width: 30%;
             padding: 10px;
+            border-right: 2px solid blue;
         }
         .right-column {
             width: 70%;
@@ -44,7 +52,7 @@
         }
         .anime-image {
             width: 100%;
-            border: 1px solid #000;
+            border: 1px solid black;
         }
         .linkedin-frame {
             width: 100%;
@@ -52,20 +60,35 @@
             border: none;
         }
         .watermark {
-            position: absolute;
+            position: fixed;
             top: 30%;
-            left: 30%;
-            font-size: 100px;
+            left: 20%;
+            font-size: 150px;
             color: orange;
-            opacity: 0.3;
+            opacity: 0.2;
             transform: rotate(-30deg);
+            font-weight: bold;
+            z-index: -1;
+        }
+        .box {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            background: lightblue;
+            padding: 15px;
+            border: 1px solid black;
+        }
+        .box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .box ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>MIS 3320 - Coding Exam</h1>
-    </div>
+    <div class="header">MIS 3320 - Coding Exam</div>
     <div class="menu">
         <a href="#">Home</a>
         <a href="#">Project B</a>
@@ -74,17 +97,24 @@
     </div>
     <div class="content">
         <div class="left-column">
-            <h2>Information</h2>
+            <h2>Research Project B</h2>
+            <h3>Information</h3>
             <img src="anime-character.jpg" alt="Anime Character" class="anime-image">
-            <p>Anime characters are widely loved for their unique styles...</p>
+            <p>Anime characters are widely loved for their unique styles and stories...</p>
         </div>
         <div class="right-column">
-            <h2>Research Project B</h2>
-            <p>This research project explores...</p>
+            <p>Detailed research findings and analysis...</p>
             <h3>Analysis</h3>
-            <p>Deep analysis of the research...</p>
+            <p>Deep analysis of the research findings...</p>
             <iframe class="linkedin-frame" src="https://www.linkedin.com/in/emmanuel-sam-0076692a3/"></iframe>
         </div>
+    </div>
+    <div class="box">
+        <ul>
+            <li>1. Information</li>
+            <li>2. Analysis</li>
+            <li>3. Research Results</li>
+        </ul>
     </div>
     <div class="watermark">EXAM</div>
 </body>
