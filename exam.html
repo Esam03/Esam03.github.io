@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam</title>
     <link rel="stylesheet" href="styles/exam.css">
+    <style>
+        body {
+            width: 95%;
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+            background: url('background.jpg') right repeat-y fixed;
+        }
+        nav {
+            background-color: purple;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            width: 75%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        article h2, article p {
+            margin: 0;
+        }
+        article p {
+            text-align: justify;
+        }
+        .first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
+        }
+        aside {
+            width: 20%;
+            background-color: lightblue;
+            padding: 15px;
+            position: fixed;
+            right: 10px;
+            top: 100px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav id="nav_menu">
@@ -19,45 +80,50 @@
     <header>
         <h1>Research Project B</h1>
     </header>
-    <article>
-        <h2 id="introduction">Introduction</h2>
-        <p><a href="https://www.nasa.gov/"><img src="images/saturn.png" alt="Image of Saturn"></a>
-        <span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo at risus efficitur fermentum...</p>
-        
-        <h2 id="method">Method</h2>
-        <p><span class="first-letter">M</span>auris non dui nec eros tincidunt dapibus vel ut odio. Phasellus vulputate orci ac felis scelerisque...</p>
-        
-        <h2 id="analysis">Analysis</h2>
-        <p><span class="first-letter">A</span>enean id ex eu sapien facilisis pellentesque. Vestibulum faucibus tincidunt risus, nec bibendum ex...</p>
-        
-        <h2 id="measurement">Measurement</h2>
-        <p><span class="first-letter">M</span>orbi suscipit tellus at ipsum sagittis, ac facilisis turpis ultrices. Suspendisse potenti...</p>
-        
-        <h2 id="structure">Structure</h2>
-        <p><span class="first-letter">S</span>ed vehicula nisl ut diam dictum, sit amet feugiat dolor imperdiet...</p>
-        
-        <h2 id="results">Results</h2>
-        <p><span class="first-letter">R</span>esulting data demonstrates clear trends in the experiment...</p>
-        
-        <h2 id="discussion">Discussion</h2>
-        <p><span class="first-letter">D</span>uring the analysis, several factors were considered to evaluate...</p>
-    </article>
-    <aside>
-        <ol>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#method">Method</a></li>
-            <ul>
-                <li><a href="#analysis">Analysis</a></li>
-                <ul id="ol2">
-                    <li><a href="#measurement">Measurement</a></li>
-                    <li><a href="#structure">Structure</a></li>
+    <div class="container">
+        <article>
+            <div>
+                <h2 id="introduction">Introduction</h2>
+                <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <h2 id="analysis">Analysis</h2>
+                <p><span class="first-letter">A</span>enean id ex eu sapien facilisis pellentesque...</p>
+            </div>
+            <div>
+                <h2 id="method">Method</h2>
+                <p><span class="first-letter">M</span>auris non dui nec eros tincidunt dapibus...</p>
+                <h2 id="measurement">Measurement</h2>
+                <p><span class="first-letter">M</span>orbi suscipit tellus at ipsum sagittis...</p>
+            </div>
+            <div>
+                <h2 id="structure">Structure</h2>
+                <p><span class="first-letter">S</span>ed vehicula nisl ut diam dictum...</p>
+            </div>
+            <div>
+                <h2 id="results">Results</h2>
+                <p><span class="first-letter">R</span>esulting data demonstrates clear trends...</p>
+            </div>
+            <div>
+                <h2 id="discussion">Discussion</h2>
+                <p><span class="first-letter">D</span>uring the analysis, several factors were considered...</p>
+            </div>
+        </article>
+        <aside>
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#method">Method</a></li>
+                <ul>
+                    <li><a href="#analysis">Analysis</a></li>
+                    <ul id="ol2">
+                        <li><a href="#measurement">Measurement</a></li>
+                        <li><a href="#structure">Structure</a></li>
+                    </ul>
+                    <li><a href="#results">Results</a></li>
                 </ul>
-                <li><a href="#results">Results</a></li>
-            </ul>
-            <li><a href="#discussion">Discussion</a></li>
-        </ol>
-        <a href="#nav_menu">Return to the top of the page</a>
-    </aside>
+                <li><a href="#discussion">Discussion</a></li>
+            </ol>
+            <a href="#nav_menu">Return to the top of the page</a>
+        </aside>
+    </div>
     <hr>
     <footer>
         <p class="copyright">&copy; 2025 Aidan Emmanuel Sam | 
