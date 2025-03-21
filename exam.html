@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Research Project B</title>
-    <link rel="stylesheet" type="text/css" href="exam.css">
     <style>
-        /* Updated CSS to perfectly match the provided image */
-
         body {
             width: 95%;
             margin: 15px auto;
@@ -14,10 +9,8 @@
             line-height: 1.6;
             background: url('shsu-logo.png') right repeat-y fixed;
             border: 1px solid #ccc;
-            background-size: 50%;
             background-position: center;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -27,11 +20,9 @@
             width: 100%;
             text-align: center;
         }
-
         nav ul li {
             display: inline;
         }
-
         nav ul li a {
             display: inline-block;
             color: white;
@@ -39,11 +30,9 @@
             padding: 14px 20px;
             text-decoration: none;
         }
-
         nav ul li a:hover {
             background-color: #111;
         }
-
         aside {
             width: 20%;
             position: fixed;
@@ -54,7 +43,6 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
         article {
             width: 75%;
             margin-left: 5%;
@@ -63,33 +51,27 @@
             border-left: 2px dotted red;
             border-right: 2px dotted red;
         }
-
         h1, h2 {
             font-family: 'Georgia', serif;
         }
-
         h1 {
             font-size: 2em;
             text-align: left;
             color: #4b0082;
         }
-
         h2 {
             border-bottom: 1px solid #ccc;
             margin-top: 20px;
         }
-
         p {
             text-indent: 30px;
             margin: 10px 0;
         }
-
         .first-letter {
             font-size: 1.5em;
             font-style: italic;
             font-weight: bold;
         }
-
         img {
             float: left;
             margin: 0 20px 10px 0;
@@ -97,7 +79,6 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
         footer {
             text-align: center;
             padding: 10px;
@@ -105,12 +86,10 @@
             color: white;
             border-top: 2px solid #ccc;
         }
-
         footer a {
             color: #4da8da;
             text-decoration: none;
         }
-
         hr {
             border: 0;
             height: 1px;
@@ -118,13 +97,14 @@
             margin: 20px 0;
         }
     </style>
+    <title>Project B</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Project A</a></li>
-            <li><a href="#">Project B</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project A</a></li>
+            <li><a href="exam.html">Project B</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
     </nav>
@@ -132,25 +112,41 @@
     <article>
         <h1>Research Project B</h1>
         <h2>Introduction</h2>
-        <p><img src="jupiter.jpg" alt="Jupiter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi...</p>
-        <hr>
+        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus...</p>
+        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/pia22908-16.jpg" alt="NASA Image">
+        <p> Ipsum quam voluptas assumenda...</p>
+
+        <h2>Method</h2>
+        <p><span class="first-letter">A</span>liquid reprehenderit explicabo quia. Facere, autem asperiores expedita veritatis, quas optio cum, qui dolor placeat iste officiis...</p>
+        
+        <h2>Analysis</h2>
+        <p><span class="first-letter">P</span>rovident, illo voluptatem, quaerat at impedit facere asperiores nesciunt voluptates minima ex praesentium libero...</p>
+        
         <h2>Results</h2>
-        <p>Provident illo, voluptatum...</p>
+        <p><span class="first-letter">E</span>t esse voluptates exercitationem facilis optio cum, quasi dolor nihil! Blanditiis, quod mollitia accusamus hic sit nihil omnis...</p>
+        
+        <h2>Discussion</h2>
+        <p><span class="first-letter">D</span>olore quae ear a eius obcaecati eligendi esse commodi voluptatibus tenetur animi vel est voluptatem corporis molestiae...</p>
     </article>
 
     <aside>
-        <h3>Table of Contents</h3>
         <ul>
-            <li><a href="#">Introduction</a></li>
-            <li><a href="#">Method</a></li>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">Discussion</a></li>
+            <li><a href="#introduction">I. Introduction</a></li>
+            <li><a href="#method">II. Method</a>
+                <ul>
+                    <li><a href="#analysis">a. Analysis</a></li>
+                    <li><a href="#measurement">b. Measurement</a></li>
+                    <li><a href="#structure">c. Structure</a></li>
+                </ul>
+            </li>
+            <li><a href="#results">III. Results</a></li>
+            <li><a href="#discussion">IV. Discussion</a></li>
         </ul>
-        <a href="#">Return to the top of the page</a>
+        <a href="#top">Return to the top of the page</a>
     </aside>
 
     <footer>
-        <p>&copy; 2025 Research Project. All rights reserved. <a href="#">Contact Us</a></p>
+        &copy; 2025 Your Name | <a href="https://www.linkedin.com/in/yourname" target="_blank">LinkedIn</a>
     </footer>
 </body>
 </html>
