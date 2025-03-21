@@ -9,7 +9,7 @@
             line-height: 1.6;
             background: url('shsu-logo.png') right repeat-y fixed;
             border: 1px solid #ccc;
-            background-position: center;
+            background-color: #fff;
         }
         nav ul {
             list-style-type: none;
@@ -33,23 +33,16 @@
         nav ul li a:hover {
             background-color: #111;
         }
-        aside {
-            width: 20%;
-            position: fixed;
-            top: 70px;
-            right: 15px;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
         article {
             width: 75%;
             margin-left: 5%;
             background-color: #fff;
             padding: 20px;
-            border-left: 2px dotted purple;
-            border-right: 2px dotted purple;
+            border-left: 2px dotted red;
+            border-right: 2px dotted red;
+        }
+        h1, h2 {
+            font-family: 'Georgia', serif;
         }
         h1 {
             font-size: 2em;
@@ -77,10 +70,8 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        hr {
-            border: 0;
-            height: 1px;
-            background: purple;
+        .section-divider {
+            border-top: 2px dotted purple;
             margin: 20px 0;
         }
         footer {
@@ -97,68 +88,44 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project A</a></li>
+            <li><a href="#" style="background-color: #111;">Project B</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Research Project B</h1>
+        <h2>Introduction</h2>
+        <img src="planet.jpg" alt="Image of a planet">
+        <p class="first-letter">L</p>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure accusantium a sit tempora quae nam quas culpa. Ipsum quidem mollitia animi, amet voluptate accusamus eos dolorum corrupti consequuntur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.
 
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Project A</a></li>
-        <li><a href="#">Project B</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
-</nav>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend ligula id libero fermentum, eget dapibus turpis fermentum. Nullam a eros libero. Fusce id imperdiet erat. Pellentesque quis suscipit nisl. Mauris convallis sem eu velit consequat, eget malesuada est placerat. Cras fermentum est a lacus dictum, et interdum enim vehicula.</p>
+        
+        <div class="section-divider"></div>
 
-<aside>
-    <h3>Table of Contents</h3>
-    <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#method">Method</a></li>
-        <li>
-            <a href="#analysis">Analysis</a>
-            <ul>
-                <li><a href="#measurement">Measurement</a></li>
-                <li><a href="#structure">Structure</a></li>
-            </ul>
-        </li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#discussion">Discussion</a></li>
-    </ol>
-</aside>
+        <h2>Method</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra lacus non metus dapibus, a lacinia magna facilisis. Donec venenatis quam vel sem malesuada tincidunt.</p>
 
-<article>
-    <h1>Research Project B</h1>
+        <div class="section-divider"></div>
 
-    <h2 id="introduction">Introduction</h2>
-    <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus, iure accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos doloribus corrupti consequatur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.</p>
-    <hr>
+        <h2>Results</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies massa eu metus condimentum, ut pulvinar quam eleifend. Fusce convallis est id orci tincidunt, ac scelerisque purus feugiat.</p>
 
-    <h2 id="method">Method</h2>
-    <p>Facere, autem asperiores expedita veritatis, quas optio, cum dolor placeat iste officiis.</p>
-    <hr>
+        <div class="section-divider"></div>
 
-    <h2 id="analysis">Analysis</h2>
-    <p>Dolore quaerat ea eius obcaecati eligendi esse commodi voluptatibus tenetur animi vel.</p>
-    <hr>
-
-    <h2 id="measurement">Measurement</h2>
-    <p>Voluptatum, corporis molestias fugit architecto rerum cum minus labore.</p>
-    <hr>
-
-    <h2 id="structure">Structure</h2>
-    <p>Minima sit omnis sunt mollitia possimus doloribus.</p>
-    <hr>
-
-    <h2 id="results">Results</h2>
-    <p>Deserunt ex laudantium assumenda eligendi fuga.</p>
-    <hr>
-
-    <h2 id="discussion">Discussion</h2>
-    <p>Explicabo corporis ad placeat, autem ipsa.</p>
-    <hr>
+        <h2>Discussion</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in ligula sit amet sapien bibendum fringilla.</p>
+        
+        <div class="section-divider"></div>
+        
+        <p><strong>Created by: Emmanuel Sam</strong></p>
+    </article>
 
     <footer>
-        <p>&copy; 2025 SHSU Project B | <a href="#">Return to the top of the page</a></p>
+        <p>&copy; 2025 Project B. All rights reserved.</p>
     </footer>
-</article>
-
 </body>
 </html>
