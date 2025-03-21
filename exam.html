@@ -1,67 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Project B</title>
-    <link rel="stylesheet" type="text/css" href="exam.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Project A</a></li>
-            <li><a href="exam.html">Project B</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
+./* Updated CSS to perfectly match the provided image */
 
-    <hr>
-    
-    <aside>
-        <h3>Contents</h3>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#method">Method</a></li>
-            <li><a href="#analysis">Analysis</a></li>
-            <li><a href="#measurement">Measurement</a></li>
-            <li><a href="#structure">Structure</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#discussion">Discussion</a></li>
-        </ul>
-    </aside>
+body {
+    width: 95%;
+    margin: 15px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('shsu-logo.png') right repeat-y fixed;
+    border: 1px solid #ccc;
+    background-size: 50%;
+    background-position: center;
+}
 
-    <article>
-        <h1>Research Project B</h1>
-        
-        <h2 id="introduction">Introduction</h2>
-        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac ligula id justo tincidunt dapibus...</p>
-        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt="NASA Logo">
-        <p><span class="first-letter">A</span>liquam suscipit dapibus nibh...</p>
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #4b0082;
+    overflow: hidden;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    text-align: center;
+}
 
-        <h2 id="method">Method</h2>
-        <p><span class="first-letter">M</span>auris non sapien neque...</p>
-        
-        <h2 id="analysis">Analysis</h2>
-        <p><span class="first-letter">A</span>enean volutpat sapien eu...</p>
+nav ul li {
+    display: inline;
+}
 
-        <h2 id="measurement">Measurement</h2>
-        <p><span class="first-letter">S</span>ed efficitur quam non...</p>
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
 
-        <h2 id="structure">Structure</h2>
-        <p><span class="first-letter">V</span>ivamus vehicula libero at...</p>
+nav ul li a:hover {
+    background-color: #111;
+}
 
-        <h2 id="results">Results</h2>
-        <p><span class="first-letter">P</span>hasellus nec nunc eget...</p>
+aside {
+    width: 20%;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        <h2 id="discussion">Discussion</h2>
-        <p><span class="first-letter">Q</span>uisque non nisi at sem...</p>
-    </article>
-    
-    <hr>
+article {
+    width: 75%;
+    margin-left: 5%;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 2px dotted red;
+    border-right: 2px dotted red;
+}
 
-    <footer>
-        &copy; 2025 Your Name | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    </footer>
-</body>
-</html>
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: left;
+    color: #4b0082;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+p {
+    text-indent: 30px;
+    margin: 10px 0;
+}
+
+.first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+img {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-top: 2px solid #ccc;
+}
+
+footer a {
+    color: #4da8da;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
