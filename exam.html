@@ -10,113 +10,63 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="projectA.html">Project A</a></li>
-            <li class="active"><a href="projectB.html">Project B</a></li>
+            <li><a href="project_a.html">Project A</a></li>
+            <li><a href="project_b.html" class="active">Project B</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
     </nav>
     
-    <main>
+    <div class="container">
         <article>
             <h1>Research Project B</h1>
             
             <h2 id="introduction">Introduction</h2>
-            <img src="https://www.nasa.gov" alt="Image of space from NASA" class="wrapped-image">
-            <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit... (500 words of lorem ipsum)</p>
+            <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia22486-16.jpg" 
+                 alt="NASA Image" class="float-left">
+            <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestias excepturi, 
+                odio eum necessitatibus, iure accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet 
+                voluptates accusamus esse doloribus corrupti consequatur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga 
+                eius quos possimus...</p>
             
             <h2 id="method">Method</h2>
-            <p><span class="first-letter">P</span>rovident, illo voluptatem, quaerat at impedit facere... (500 words of lorem ipsum)</p>
+            <p><span class="first-letter">P</span>erferendis cumque velit nam ut, dolore ipsa veniam autem aliquid molestias neque beatae 
+                eaque veniam explicabo necessitatibus...</p>
             
             <h2 id="analysis">Analysis</h2>
-            <p><span class="first-letter">E</span>os mollitia doloremque ratione expedita tenetur... (500 words of lorem ipsum)</p>
+            <p><span class="first-letter">A</span>liquid reprehenderit explicabo quia. Facere, autem asperiores expedita veritatis...</p>
             
             <h2 id="measurement">Measurement</h2>
-            <p><span class="first-letter">N</span>umquam corrupti, veniam adipisci voluptates voluptate... (500 words of lorem ipsum)</p>
+            <p><span class="first-letter">M</span>axime, quos eligendi molestias tenetur. Nihil adipisci laudantium dolorem praesentium explicabo...</p>
             
             <h2 id="structure">Structure</h2>
-            <p><span class="first-letter">D</span>eserunt error ex laudantium assumenda eligendi fuga... (500 words of lorem ipsum)</p>
+            <p><span class="first-letter">S</span>imilique cupiditate corporis dolor blanditiis accusamus, quibusdam ea est...</p>
             
             <h2 id="results">Results</h2>
-            <p><span class="first-letter">V</span>elit dolorum tempora nisi exercitationem quod?... (500 words of lorem ipsum)</p>
+            <p><span class="first-letter">R</span>epellendus consequuntur hic earum ratione tempora, perspiciatis nostrum voluptatem...</p>
             
             <h2 id="discussion">Discussion</h2>
-            <p><span class="first-letter">E</span>st esse voluptates exercitationem facilis optio... (500 words of lorem ipsum)</p>
+            <p><span class="first-letter">D</span>olore mollitia architecto recusandae aliquam suscipit nesciunt reiciendis!</p>
         </article>
         
         <aside>
             <ul>
-                <li><a href="#introduction">I. Introduction</a></li>
-                <li><a href="#method">II. Method</a>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#method">Method</a>
                     <ul>
-                        <li><a href="#analysis">a. Analysis</a></li>
-                        <li><a href="#measurement">b. Measurement</a></li>
-                        <li><a href="#structure">c. Structure</a></li>
+                        <li><a href="#analysis">Analysis</a></li>
+                        <li><a href="#measurement">Measurement</a></li>
+                        <li><a href="#structure">Structure</a></li>
                     </ul>
                 </li>
-                <li><a href="#results">III. Results</a></li>
-                <li><a href="#discussion">IV. Discussion</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#discussion">Discussion</a></li>
+                <li><a href="#">Return to the top of the page</a></li>
             </ul>
-            <a href="#top">Return to the top of the page</a>
         </aside>
-    </main>
+    </div>
     
     <footer>
-        <p>&copy; 2024 Emmanuel Sam | <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn</a></p>
+        &copy; 2025 Your Name | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
     </footer>
 </body>
 </html>
-
-/* CSS Styles */
-body {
-    width: 95%;
-    margin: 15px auto;
-    background: url('shsu_logo.png') right repeat-y fixed;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    background: blue;
-    padding: 10px;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    display: flex;
-    width: 100%;
-}
-
-article {
-    width: 75%;
-    border-right: 2px dashed blue;
-    padding-right: 20px;
-}
-
-aside {
-    width: 20%;
-    position: fixed;
-    right: 10px;
-    top: 100px;
-    background: lightblue;
-    padding: 10px;
-    border: 2px solid darkblue;
-}
-
-.wrapped-image {
-    float: left;
-    margin: 0 10px 10px 0;
-}
-
-.first-letter {
-    font-size: 2em;
-    font-weight: bold;
-    font-style: italic;
-}
