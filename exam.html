@@ -4,58 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Project B</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            margin: 20px;
+        }
+        .left-column {
+            width: 30%;
+            padding: 10px;
+        }
+        .right-column {
+            width: 70%;
+            padding: 10px;
+        }
+        .anime-image {
+            width: 100%;
+            border: 1px solid #000;
+        }
+        .linkedin-frame {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .watermark {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            font-size: 100px;
+            color: orange;
+            opacity: 0.3;
+            transform: rotate(-30deg);
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projectA.html">Project A</a></li>
-            <li><a href="projectB.html">Project B</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <aside>
-        <ul>
-            <li><a href="#introduction">I. Introduction</a></li>
-            <li><a href="#method">II. Method</a>
-                <ul>
-                    <li><a href="#analysis">A. Analysis</a></li>
-                    <li><a href="#measurement">B. Measurement</a>
-                        <ul>
-                            <li><a href="#structure">1. Structure</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#results">III. Results</a></li>
-            <li><a href="#discussion">IV. Discussion</a></li>
-            <li><a href="#top">Return to the top of the page</a></li>
-        </ul>
-    </aside>
-    <article>
-        <h1>Research Project B</h1>
-        <h2 id="introduction">Introduction</h2>
-        <img src="anime-character.jpg" alt="Anime Character">
-        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget nulla a nulla vehicula dapibus. Suspendisse potenti. Sed quis urna vitae arcu elementum tempus. Nam vel turpis non arcu consequat dapibus non nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer fermentum bibendum dolor, id pellentesque metus dictum at. Pellentesque sit amet sem at mauris pharetra tincidunt. Donec in ultrices felis.</p>
-        <h2 id="method">Method</h2>
-        <p><span class="first-letter">M</span>auris vitae lacus vel odio pharetra accumsan. Curabitur et ligula et erat iaculis cursus. Ut at nibh in felis convallis laoreet. Aenean gravida, felis vel aliquet lacinia, enim odio interdum purus, nec convallis ligula arcu eu lectus. Integer id risus ut mi malesuada tincidunt. Duis tincidunt tincidunt odio, et iaculis dolor fermentum eget.</p>
-        <h2 id="analysis">Analysis</h2>
-        <p><span class="first-letter">A</span>liquam erat volutpat. Fusce nec nunc in odio pharetra aliquet. Sed euismod sapien ac erat cursus, nec congue neque pulvinar. Curabitur dignissim auctor felis, nec malesuada magna accumsan et. Phasellus egestas nunc id dolor tincidunt, non gravida erat sodales.</p>
-        <h2 id="measurement">Measurement</h2>
-        <p><span class="first-letter">M</span>orbi id nulla a velit dapibus molestie. Sed vehicula, lorem nec aliquet accumsan, erat ligula facilisis mauris, eu rhoncus nisi nisi eget orci. Integer non dapibus ex, at condimentum purus.</p>
-        <h2 id="structure">Structure</h2>
-        <p><span class="first-letter">S</span>uspendisse potenti. Cras ac urna vitae purus efficitur sollicitudin. Nunc id eros eget velit scelerisque ultrices. Vestibulum in urna ut libero dapibus bibendum. Nam vitae justo at lectus convallis interdum.</p>
-        <h2 id="results">Results</h2>
-        <p><span class="first-letter">R</span>esulting data indicated significant improvements in efficiency. Nullam eleifend pharetra eros, et imperdiet est interdum non. Phasellus fermentum fringilla justo, sed interdum arcu posuere non. Duis et urna vitae felis gravida auctor.</p>
-        <h2 id="discussion">Discussion</h2>
-        <p><span class="first-letter">D</span>onec eleifend, odio sed volutpat tristique, ligula sapien dictum lorem, sed ultricies felis nisl a urna. Vestibulum sodales efficitur justo, ac condimentum odio laoreet id. Proin posuere bibendum lectus, nec tempor odio maximus non.</p>
-    </article>
-    <hr>
-    <footer>
-        <p>&copy; Emmanuel Sam | <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn</a></p>
-    </footer>
+    <div class="header">
+        <h1>MIS 3320 - Coding Exam</h1>
+    </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Project B</a>
+        <a href="#">English</a>
+        <a href="#">Search Me</a>
+    </div>
+    <div class="content">
+        <div class="left-column">
+            <h2>Information</h2>
+            <img src="anime-character.jpg" alt="Anime Character" class="anime-image">
+            <p>Anime characters are widely loved for their unique styles...</p>
+        </div>
+        <div class="right-column">
+            <h2>Research Project B</h2>
+            <p>This research project explores...</p>
+            <h3>Analysis</h3>
+            <p>Deep analysis of the research...</p>
+            <iframe class="linkedin-frame" src="https://www.linkedin.com/in/emmanuel-sam-0076692a3/"></iframe>
+        </div>
+    </div>
+    <div class="watermark">EXAM</div>
 </body>
 </html>
-
