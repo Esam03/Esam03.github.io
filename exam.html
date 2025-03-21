@@ -33,6 +33,16 @@
         nav ul li a:hover {
             background-color: #111;
         }
+        aside {
+            width: 20%;
+            position: fixed;
+            top: 70px;
+            right: 15px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
         article {
             width: 75%;
             margin-left: 5%;
@@ -50,9 +60,9 @@
             color: #4b0082;
         }
         h2 {
-            color: #4b0082;
             border-bottom: 1px solid #ccc;
             margin-top: 20px;
+            color: #4b0082;
         }
         p {
             text-indent: 30px;
@@ -87,46 +97,59 @@
             background: #ccc;
             margin: 20px 0;
         }
-        .divider {
-            border-top: 2px dotted purple;
-            margin: 20px 0;
-        }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Project A</a></li>
-            <li><a href="#">Project B</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
-    
-    <article>
-        <h1>Research Project B</h1>
-        <h2>Introduction</h2>
-        <img src="planet.jpg" alt="Image of a planet">
-        <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolorum corrupti consequuntur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.</p>
-        
-        <div class="divider"></div>
-        
-        <h2>Analysis</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolorum corrupti consequuntur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.</p>
-        
-        <div class="divider"></div>
-        
-        <h2>Results</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolorum corrupti consequuntur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.</p>
-        
-        <div class="divider"></div>
-        
-        <h2>Discussion</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure, accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus eos dolorum corrupti consequuntur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.</p>
-    </article>
-    
-    <footer>
-        <p>Created by Emmanuel Sam. <a href="#">Return to the top of the page</a></p>
-    </footer>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Project A</a></li>
+        <li><a href="#">Project B</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</nav>
+
+<aside>
+    <h3>Table of Contents</h3>
+    <ul>
+        <li><a href="#introduction">I. Introduction</a></li>
+        <li><a href="#method">II. Method</a>
+            <ul>
+                <li><a href="#analysis">a. Analysis</a></li>
+                <li><a href="#structure">b. Structure</a></li>
+            </ul>
+        </li>
+        <li><a href="#results">III. Results</a></li>
+        <li><a href="#discussion">IV. Discussion</a></li>
+    </ul>
+</aside>
+
+<article>
+    <h1>Research Project B</h1>
+
+    <h2 id="introduction">Introduction</h2>
+    <p class="first-letter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
+
+    <h2 id="method">Method</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
+
+    <h2 id="analysis">a. Analysis</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
+
+    <h2 id="structure">b. Structure</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
+
+    <h2 id="results">Results</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
+
+    <h2 id="discussion">Discussion</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestae excepturi, odio eum necessitatibus...</p>
+</article>
+
+<footer>
+    <p>Created by Emmanuel Sam | <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn Profile</a></p>
+</footer>
+
 </body>
 </html>
