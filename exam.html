@@ -1,134 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam</title>
-    <link rel="stylesheet" href="styles/exam.css">
+    <title>Research Project B</title>
+    <link rel="stylesheet" type="text/css" href="exam.css">
     <style>
+        /* Updated CSS to perfectly match the provided image */
+
         body {
             width: 95%;
             margin: 15px auto;
-            display: flex;
-            flex-direction: column;
-            background: url('background.jpg') right repeat-y fixed;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: url('shsu-logo.png') right repeat-y fixed;
+            border: 1px solid #ccc;
+            background-size: 50%;
+            background-position: center;
         }
-        nav {
-            background-color: purple;
-            padding: 10px;
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #4b0082;
+            overflow: hidden;
+            border-bottom: 2px solid #ccc;
+            width: 100%;
             text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
+
         nav ul li {
             display: inline;
         }
+
         nav ul li a {
+            display: inline-block;
             color: white;
+            text-align: center;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
+
+        nav ul li a:hover {
+            background-color: #111;
         }
-        article {
-            width: 75%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        article h2, article p {
-            margin: 0;
-        }
-        article p {
-            text-align: justify;
-        }
-        .first-letter {
-            font-size: 2em;
-            font-weight: bold;
-            font-style: italic;
-        }
+
         aside {
             width: 20%;
-            background-color: lightblue;
-            padding: 15px;
             position: fixed;
-            right: 10px;
-            top: 100px;
+            top: 70px;
+            right: 15px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        footer {
+
+        article {
+            width: 75%;
+            margin-left: 5%;
+            background-color: #fff;
+            padding: 20px;
+            border-left: 2px dotted red;
+            border-right: 2px dotted red;
+        }
+
+        h1, h2 {
+            font-family: 'Georgia', serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: left;
+            color: #4b0082;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ccc;
             margin-top: 20px;
+        }
+
+        p {
+            text-indent: 30px;
+            margin: 10px 0;
+        }
+
+        .first-letter {
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        img {
+            float: left;
+            margin: 0 20px 10px 0;
+            width: 120px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
             text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-top: 2px solid #ccc;
+        }
+
+        footer a {
+            color: #4da8da;
+            text-decoration: none;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <nav id="nav_menu">
+    <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Project A</a></li>
-            <li><a href="exam.html" class="current">Project B</a></li>
-            <li><a href="#" class="lastitem">About Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project A</a></li>
+            <li><a href="#">Project B</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
-    <hr>
-    <header>
+
+    <article>
         <h1>Research Project B</h1>
-    </header>
-    <div class="container">
-        <article>
-            <div>
-                <h2 id="introduction">Introduction</h2>
-                <p><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <h2 id="analysis">Analysis</h2>
-                <p><span class="first-letter">A</span>enean id ex eu sapien facilisis pellentesque...</p>
-            </div>
-            <div>
-                <h2 id="method">Method</h2>
-                <p><span class="first-letter">M</span>auris non dui nec eros tincidunt dapibus...</p>
-                <h2 id="measurement">Measurement</h2>
-                <p><span class="first-letter">M</span>orbi suscipit tellus at ipsum sagittis...</p>
-            </div>
-            <div>
-                <h2 id="structure">Structure</h2>
-                <p><span class="first-letter">S</span>ed vehicula nisl ut diam dictum...</p>
-            </div>
-            <div>
-                <h2 id="results">Results</h2>
-                <p><span class="first-letter">R</span>esulting data demonstrates clear trends...</p>
-            </div>
-            <div>
-                <h2 id="discussion">Discussion</h2>
-                <p><span class="first-letter">D</span>uring the analysis, several factors were considered...</p>
-            </div>
-        </article>
-        <aside>
-            <ol>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#method">Method</a></li>
-                <ul>
-                    <li><a href="#analysis">Analysis</a></li>
-                    <ul id="ol2">
-                        <li><a href="#measurement">Measurement</a></li>
-                        <li><a href="#structure">Structure</a></li>
-                    </ul>
-                    <li><a href="#results">Results</a></li>
-                </ul>
-                <li><a href="#discussion">Discussion</a></li>
-            </ol>
-            <a href="#nav_menu">Return to the top of the page</a>
-        </aside>
-    </div>
-    <hr>
+        <h2>Introduction</h2>
+        <p><img src="jupiter.jpg" alt="Jupiter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod porro molestiae excepturi...</p>
+        <hr>
+        <h2>Results</h2>
+        <p>Provident illo, voluptatum...</p>
+    </article>
+
+    <aside>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Method</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Discussion</a></li>
+        </ul>
+        <a href="#">Return to the top of the page</a>
+    </aside>
+
     <footer>
-        <p class="copyright">&copy; 2025 Aidan Emmanuel Sam | 
-            <a href="https://www.linkedin.com/in/emmanuel-sam-0076692a3/" target="_blank">LinkedIn</a>
-        </p>
+        <p>&copy; 2025 Research Project. All rights reserved. <a href="#">Contact Us</a></p>
     </footer>
 </body>
 </html>
