@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Responsive Web Design</title>
   <style>
     html, body {
@@ -10,13 +10,11 @@
       height: 100%;
       font-size: 100%;
     }
-
     * {
       font-family: Verdana, Arial, Helvetica, sans-serif;
       box-sizing: border-box;
     }
 
-    /*---------------------- NAV ------------------------*/
     .top-nav {
       display: flex;
       flex-direction: row;
@@ -91,7 +89,6 @@
       transform: rotate(-405deg);
     }
 
-    /*---------------------- LINKS ------------------------*/
     .top-nav a {
       text-decoration: none;
       color: white;
@@ -102,7 +99,6 @@
       text-decoration: underline;
     }
 
-    /*---------------------- ARTICLE ------------------------*/
     article {
       padding: 0 1em;
     }
@@ -122,15 +118,23 @@
       max-width: 760px;
     }
 
-    /*---------------------- FOOTER ------------------------*/
     footer {
       border-top: 2px solid #f46b45;
       text-align: center;
       font-size: .8em;
-      padding: 1em 0;
+      padding: 1em;
     }
 
-    /*---------------------- MEDIA QUERY ------------------------*/
+    footer a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 700px) {
       .menu-button-container {
         display: flex;
@@ -193,10 +197,9 @@
 </head>
 <body>
 
-  <!-- Navigation Section -->
   <section class="top-nav">
     <div>
-      <p>Your Name</p>
+      <p>Kamphol Wijayaswungkul</p>
     </div>
     <input id="menu-toggle" type="checkbox" />
     <label class="menu-button-container" for="menu-toggle">
@@ -211,23 +214,21 @@
     </ul>
   </section>
 
-  <!-- About Me Section -->
   <article>
     <h2>About Me</h2>
-    <img src="your-image.jpg" alt="A picture representing me" title="About Me Image" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/WISE_All_Sky_Data_Map.jpg" alt="Galaxy Sky Map" title="About Me Image" />
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ipsum in urna ullamcorper malesuada. 
-      Integer eu lacus nec arcu viverra egestas. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci 
-      luctus et ultrices posuere cubilia curae; Sed vitae augue neque. Etiam interdum augue sit amet odio tincidunt 
-      malesuada. Curabitur porta pulvinar massa. Proin tincidunt lacinia lorem, in tincidunt justo feugiat non. 
-      Morbi convallis velit at massa suscipit imperdiet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur est atque nulla sit debitis sequi maxime quod quae vero? Odio, id aspernatur quam facere natus nam doloribus quis optio explicabo accusantium, tenetur deserunt nobis reiciendis non aperiam, nisi architecto delectus! Eaque magnam omnis rerum nihil dolorum similique esse voluptatum! Quod, iure.
+      Cum impedit reprehenderit fugit, maxime modi voluptatibus natus exercitationem omnis a ullam suscipit consequatur! Fuga velit animi veniam, architecto, molestias praesentium doloribus quis? Quae autem voluptas molestias officiis consequatur.
     </p>
   </article>
 
-  <!-- Footer -->
   <footer>
-    &copy; 2025 Your Name |
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    &copy; 2025 Kamphol Wijayaswungkul |
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+    <a href="#">MSU: SEIS</a> |
+    <a href="#">COSC</a> |
+    <a href="#">East Tennessee State University</a>
   </footer>
 
 </body>
