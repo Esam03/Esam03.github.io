@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Sam - Responsive Page</title>
+  <link rel="stylesheet" href="rwd.css" />
+</head>
+<body>
+  <section class="top-nav">
+    <div>
+      <p>Emmanuel Sam</p>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
+    <ul class="menu">
+      <li class="current"><a href="rwd.html">Home</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Experience</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </section>
+
+  <article>
+    <h2>About Me</h2>
+    <img src="0579d418-80e1-4b26-99fb-cc848643830d.png" alt="Galaxy Image" title="Galaxy" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque pariatur est atque nullis et debitis sequi maxime quod quae vero? Officiis aspernatur quam facere natus nam doloribus quis optio explicabo accusantium consequatur. Reprehenderit laudantium facere doloremque ex totam, non quo ipsum, quas vero rem nihil numquam similique sequi voluptatum? Quod, iure. Quam eveniet incidunt reiciendis, fugit, maxime modi voluptatibus exercitationem omnis a ullam suscipit consequuntur facere velit animi veniam, architecto, molestiae praesentium doloribus quis? Quas autem voluptas molestias officiis consequatur.</p>
+  </article>
+
+  <footer>
+    &copy; 2025 Emmanuel Sam | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </footer>
+</body>
+</html>
